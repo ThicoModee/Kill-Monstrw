@@ -1,3 +1,23 @@
+--// Variables \\--
+local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Workspace = game:GetService("Workspace")
+local WaveFarm = true
+local UpgradeSkill = true
+local AutoEgg = true
+
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Kill Monsters to Save Princess", "Ocean")
+
+
+--// Tabs \\--
+local MainTab = Window:NewTab("Main")
+local PlayerTab = Window:NewTab("Player")
+local VisualsTab = Window:NewTab("Visuals")
+local MiscTab = Window:NewTab("Misc")
+
+
 --// Sections \\--
 local MainSection = MainTab:NewSection("Main")
 local PlayerSection = PlayerTab:NewSection("Player")
